@@ -6,6 +6,7 @@ When the index.html is loaded, you can see Yangon as the default input value in 
 You can type whatever the city you want in the text input box. 
 
 #Features 
+
 It will show, 
 1. Current Temperature of the city 
 2. Feels like temperature of the city
