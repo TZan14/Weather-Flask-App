@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{url_for('static', filename= 'icon.png')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'main.css')}}">
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1> The Weather Website </h1>
+    </div>
+
+    <form action="{{url_for('index')}}" method="post" id="form">
+        <input type="text" name="city" id="city" placeholder="Search City" value="Yangon"> <br>
+        <input type="submit" id="enter" value="Enter">
+    </form>
+
+    <br>
+
+    <table>
+        <tr>
+            <td> {{n_city}}</td>
+            <td> {{place}}</td>
+        </tr>
+        <tr>
+            <td> {{n_ctemp}}</td>
+            <td> {{current_temp}}</td>
+        </tr>
+        <tr>
+            <td> {{n_ftemp}}</td>
+            <td> {{feel_temp}}</td>
+        </tr>
+        <tr>
+            <td> {{n_max}}</td>
+            <td> {{max_temp}}</td>
+        </tr>
+        <tr>
+            <td> {{n_min}}</td>
+            <td> {{min_temp}}</td>
+        </tr>
+        <tr>
+            <td> {{n_wind}}</td>
+            <td> {{wind}}</td>
+        </tr>
+        <tr>
+            <td> {{n_humi}}</td>
+            <td> {{humidity}}</td>
+        </tr>
+    </table>
+    <footer style="color: white; padding-top: 20px;"> {{credit}}</footer>
+
+
+
+
+
+</body>
+
+</html>

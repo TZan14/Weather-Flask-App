@@ -1,0 +1,44 @@
+body {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(151, 143, 143);
+}
+
+#header {
+    color: white;
+    text-decoration: underline solid white;
+}
+
+#city {
+    width: max-content;
+    height: 25px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 0.75px solid #ffd;
+}
+
+#enter {
+    width: fit-content;
+    height: 30px;
+    border-radius: 5px;
+    border: 0.75px solid #ffd;
+    background-color: red;
+    color: white;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+
+table, td {
+
+    text-align: left;
+    margin: auto;
+    table-layout: auto;
+    color: white;
+    font-size: large;
+    padding: 10px;
+}
